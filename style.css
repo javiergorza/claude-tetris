@@ -16,8 +16,37 @@ body {
 }
 
 .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.board-area {
   position: relative;
 }
+
+/* ---- Título (logo) ---- */
+.game-title {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 1;
+  text-align: center;
+}
+
+.game-title span {
+  text-shadow: 0 3px 0 rgba(0, 0, 0, 0.5), 0 0 18px currentColor;
+}
+
+.game-title span:nth-child(1) { color: #e57373; }
+.game-title span:nth-child(2) { color: #ffb74d; }
+.game-title span:nth-child(3) { color: #ffd54f; }
+.game-title span:nth-child(4) { color: #81c784; }
+.game-title span:nth-child(5) { color: #4dd0e1; }
+.game-title span:nth-child(6) { color: #ba68c8; }
 
 .game-container {
   display: flex;
